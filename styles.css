@@ -15,6 +15,9 @@ body{
     justify-items: center;
     align-content: center;
     align-items: center;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
 }
 #name-input{
     border-radius: 10px;
@@ -26,6 +29,10 @@ name-display{
     font-size: 2em;
     display: flex;
     flex-direction: column;
+    background-color: blueviolet;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
 }
 #save-button, #load-button{
     width: 100%;
@@ -34,4 +41,23 @@ name-display{
     color: lime;
     height: auto;
     font-size: 1.5em;
+}
+#key{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+.red{
+    color: red;
+}
+.purple{
+    color: purple;
 }
