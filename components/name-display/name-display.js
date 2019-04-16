@@ -11,8 +11,8 @@ function nameDisplay(NameService) {  //nameDisplay is the name-display parent's 
 }
         
 angular
-.module('NameApp')
-.component('nameDisplay', {
+.module('NameApp')  // tells it what module it is a component of
+.component('nameDisplay', {  // gives the child component a name, template stuff: h1 displays the ctrl's nameInput variable - either defined by the loadName default or saved ng-modeled data from the parent.  ng-click calls the loadName() function, which calls the service's loadName() which returns the service.name
     template: `
     <h1>Name: {{$ctrl.nameInput}}</h1>
     <button id="load-button" ng-click="$ctrl.loadName()">Load</button>

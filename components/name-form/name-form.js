@@ -11,7 +11,7 @@ function nameForm(NameService) {  // parent controller, by passing NameService a
         
 angular
 .module('NameApp')
-.component('nameForm', {
+.component('nameForm', { // template is the HTML that this component will drop in, name-display corresponds to the nameDisplay child component
     template: `
     <div id="form-box">
         <input id="name-input" placeholder="Type a Name Here" type=text ng-model="$ctrl.nameInput">
@@ -20,7 +20,7 @@ angular
         <name-display></name-display>
     </div> 
     `,
-    controller: nameForm,
+    controller: nameForm,  // assigns controller to the nameForm component.
     // bindings: {
 
     // }
