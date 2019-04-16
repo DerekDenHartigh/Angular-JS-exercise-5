@@ -1,11 +1,11 @@
 "use strict";
 
-function nameForm(NameService) {
+function nameForm(NameService) {  // parent controller, by passing NameService as an argument, nameForm controller has access to it.
 
     const ctrl = this;
 
-    ctrl.saveName = function(){
-        NameService.saveName(ctrl.nameInput);
+    ctrl.saveName = function(){  // this function passes the ng-modeled data as a parameter into the saveName function contained within the NameService service 
+        NameService.saveName(ctrl.nameInput);  // saveName(ctrl.nameInput) assigns service.name as ctrl.nameInput
     };
 }
         
