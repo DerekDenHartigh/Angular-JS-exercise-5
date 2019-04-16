@@ -1,6 +1,6 @@
 "use strict";
 
-function nameForm(NameService) {  // parent controller, by passing NameService as an argument, nameForm controller has access to it.
+function nameForm(NameService) {  // nameForm controller, by passing NameService as an argument, nameForm controller has access to it.
 
     const ctrl = this;
 
@@ -11,7 +11,7 @@ function nameForm(NameService) {  // parent controller, by passing NameService a
         
 angular
 .module('NameApp')
-.component('nameForm', { // template is the HTML that this component will drop in, name-display corresponds to the nameDisplay child component
+.component('nameForm', { // template is the HTML that this component will drop in, name-display corresponds to the nameDisplay component
     template: `
     <div id="form-box">
         <input id="name-input" placeholder="Type a Name Here" type=text ng-model="$ctrl.nameInput">

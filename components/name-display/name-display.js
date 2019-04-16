@@ -1,6 +1,6 @@
 "use strict";
 
-function nameDisplay(NameService) {  //nameDisplay is the name-display parent's controller, I'm passing the NameService service function into the controller as a parameter
+function nameDisplay(NameService) {  //nameDisplay is the name-display.js controller, I'm passing the NameService service function into the controller as a parameter
     const ctrl = this;
     // let nameInput;  // initializing nameInput, is this necessary? Nope 
     ctrl.nameInput = "Defaultius Namius"  // I can set a default nameInput, loading the new nameInput w/ nothing saved will load my default service.name, as per the loadName();
@@ -12,7 +12,7 @@ function nameDisplay(NameService) {  //nameDisplay is the name-display parent's 
         
 angular
 .module('NameApp')  // tells it what module it is a component of
-.component('nameDisplay', {  // gives the child component a name, template stuff: h1 displays the ctrl's nameInput variable - either defined by the loadName default or saved ng-modeled data from the parent.  ng-click calls the loadName() function, which calls the service's loadName() which returns the service.name
+.component('nameDisplay', {  // gives the nameDisplay component its name, template stuff: h1 displays the ctrl's nameInput variable - either defined by the loadName default or saved ng-modeled data from the nameForm component.  ng-click calls the loadName() function, which calls the service's loadName() which returns the service.name
     template: `
     <h1>Name: {{$ctrl.nameInput}}</h1>
     <button id="load-button" ng-click="$ctrl.loadName()">Load</button>

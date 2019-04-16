@@ -10,16 +10,16 @@
 <body>
 <div id="key">
   <h1 id="keyh1">Key:</h1>
-  <span class="red">Parent Component</span>
-  <span class="purple">Child Component</span>
+  <span class="red">nameForm Component</span>
+  <span class="purple">nameDisplay Component</span>
 </div>
 <name-form></name-form>
 
   <!--This is where one attaches all their linked script sheets-->
   <script src="https://code.angularjs.org/1.7.8/angular.js"></script><!--Angular Library-->
   <script src="app.module.js"></script><!--module initializer?-->
-  <script src="components/name-display/name-display.js"></script><!--parent component-->
-  <script src="components/name-form/name-form.js"></script><!--child component-->
-  <script src="components/name-service.js"></script><!--service that handles the component functions/middleman between the parent/child-->
+  <script src="components/name-display/name-display.js"></script><!--name-display component-->
+  <script src="components/name-form/name-form.js"></script><!--name-form component-->
+  <script src="components/name-service.js"></script><!--service that handles the component functions/middleman between the two components-->
 </body>
 </html>
