@@ -46,10 +46,10 @@ name-display{
     display: flex;
     flex-direction: column;
     height: 20%;
-    align-content: center;
+    width: 30%;
+    align-content: space-around;
     align-items: center;
-    justify-content: flex-start;
-    justify-items: flex-start;
+    justify-content: space-around;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -57,7 +57,15 @@ name-display{
 }
 .red{
     color: red;
+    font-size: 1.5em;
+    display: flex;
 }
 .purple{
     color: purple;
+    font-size: 1.5em;
+    display: flex;
+}
+#keyh1{
+    align-self: flex-start;
+    justify-self: flex-start;
 }
